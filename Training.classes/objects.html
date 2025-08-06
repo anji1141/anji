@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bike = {
+            brand : "Tuk Tuk",
+            model : "Excel 100",
+            year : 2025,
+            color : "Blue"
+            start:function(){
+                return this.brand + " "+ this.model + "is starting";
+            }
+        };
+        document.write("bike brand:"+bike.brand+"<br>");
+        document.write("carmodel:"+bike["model"]+"<br>");
+        document.write("year:"+bike.year+"<br>");
+        document.write(car.start());
+
+    </script>
+    "bike brand:Tuk Tuk"
+    <br>
+    "bike model:Excel 100"
+    <br>
+    "year:2025"
+    <br>
+    "Tuk Tuk Excel 100 is starting"
+</body>
+</html>

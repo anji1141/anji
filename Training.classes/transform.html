@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightskyblue;     
+         }
+            .item{
+                height: 25px;
+                width: 45px;
+                background-color: rgb(120, 120, 143);
+                transition-duration: 0.20s;
+                transition-timing-function: ease;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+            }
+            .item:hover{
+                background-color: brown;
+                transform: scale(14);
+                /*transform: translate(200px,500px);*/
+            }
+     </style>
+</head>
+<body>
+    <div class="item">😶‍🌫️</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+   
+    <p id ="count">60</p>
+
+    <button onclick="decrease()" ondblclick="makeorange()">-1,change background orange</button>
+    <button onclick="increase()" ondblclick="makeblue()" >+1,change background blue</button>
+    <button onclick="reset()" ondblclick="makepink()">Reset</button>
+    <script>
+        let num = 10;
+        function increase(){
+            num++;
+            document.getElementById("count").innerText = num;
+        }
+        
+        function decrease(){
+            num--;
+            document.getElementById("count").innerText = num;
+        }
+        function reset(){
+            num = 10;
+            document.getElementById("count").innerText = num;
+
+        }
+         function makeorange(){
+            document.body.style.backgroundColor = "orange";
+        }
+         function makeblue(){
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
